@@ -1,5 +1,5 @@
 # Formative Two: Creative Authentication 
-<img src="../dv200_formativetwo_authentication/frontend/carnival-authentication/src/assets/GITHUBBANNERAUTH.png" alt="Header image" width="100%" height="auto">
+<img src="frontend/carnival-authentication/src/assets/GITHUBBANNERAUTH.png" alt="Header image" width="100%" height="auto">
 
 # About The Carnival themed creative authentication
 This Creative authentication method allows users to sign up an account after "popping" 6 balloons that reveal 6 tokens that each have a different animal on them. The users need to enter a username, email then their pattern password that cant be shorter than 6 tokens or longer than 12, after entering it and signing up, it clears the input for the user to re enter ensuring they've remembered the pattern. After signing up the user is stored in the database, and a JWT token is generated. Users are also able to swap to log in and log into their existing accounts.
