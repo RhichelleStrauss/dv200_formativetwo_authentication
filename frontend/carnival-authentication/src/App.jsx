@@ -6,11 +6,16 @@ import CarnivalTent from './assets/CarnivalTent.png'
 import CarnivalTicket from './assets/CarnivalTicket.png'
 import Cloud from './assets/Cloud.png'
 
+import AuthenticationPage from '../src/pages/AuthenticationPage.jsx'
+import WelcomePage from './pages/WelcomePage.jsx'
+
 function App() {
- 
+
+ const navigate = useNavigate();
+
   return (
     <>
-    <div className='relative min-h-screen bg-[radial-gradient(circle_at_center,_#b4daf9_0%,_#062d4c_100%)] flex flex-col md:flex-row items-center justify-center font-instrument 
+    <div className='relative min-h-screen bg-[radial-gradient(circle_at_center,_#b4daf9_0%,_#062d4c_100%)] flex flex-col md:flex-row items-center justify-center font-rye 
     md:gap-24 p-8 overflow-hidden'>
 
       <div className='absolute inset-0 pointer-events-none z-0'>
@@ -39,8 +44,8 @@ function App() {
       </div>
 
       
-    <div className='absolute top-15 left-12 md:top-15 md:left-[15%] lg:left-[15%] flex flex-col items-center gap-2'>
-      <h1 className='text-[#881b28] text-6xl md:text-6xl leading-tight text-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]'>
+    <div className='absolute top-15 left-12 md:top-15 md:left-[20%] lg:left-[10%] flex flex-col items-center gap-2'>
+      <h1 className='text-[#282130] text-6xl md:text-6xl leading-tight text-center drop-shadow-[0_2px_4px_rgba(80,68,96,0.5)]'>
         Welcome to <br />the carnival!
       </h1>
       <img 
@@ -50,12 +55,13 @@ function App() {
     </div>
 
     <div className='flex items-center justify-center'>
-      <div className='relative cursor-pointer'>
+      <div className='relative cursor-pointer'
+        onClick={() => navigate('/AuthenticationPage')}>
         <img 
         src={CarnivalTent}
         className='w-[550px] md:w-[630px]'
         />
-        <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-lg tracking-wide drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+        <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-lg tracking-wide drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] font-instrument">
             click to enter
           </p>
       </div>
